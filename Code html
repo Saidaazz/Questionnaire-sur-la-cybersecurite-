@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questionnaire sur la cybersécurité</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>Questionnaire sur la cybersécurité</h1>
+
+	<form>
+		<fieldset>
+			<legend>Questions générales</legend>
+
+			<label for="nom">Nom :</label>
+			<input type="text" id="nom" name="nom" required>
+
+			<label for="prenom">Prénom :</label>
+			<input type="text" id="prenom" name="prenom" required>
+
+			<label for="email">Email :</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="tel">Téléphone :</label>
+			<input type="tel" id="tel" name="tel" required>
+
+			<label for="age">Âge :</label>
+			<input type="number" id="age" name="age" min="18" max="100" required>
+
+			<label for="pays">Pays :</label>
+			<select id="pays" name="pays" required>
+				<option value="">Sélectionner un pays</option>
+				<option value="france">France</option>
+				<option value="belgique">Belgique</option>
+				<option value="suisse">Suisse</option>
+				<option value="canada">Canada</option>
+				<option value="autre">Autre</option>
+			</select>
+
+			<label for="formation">Avez-vous déjà suivi une formation en cybersécurité ?</label>
+			<input type="radio" id="formation-oui" name="formation" value="oui" required>
+			<label for="formation-oui">Oui</label>
+			<input type="radio" id="formation-non" name="formation" value="non" required>
+			<label for="formation-non">Non</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Questions techniques</legend>
+
+			<label for="reseau">Qu'est-ce qu'un réseau informatique ?</label>
+			<textarea id="reseau" name="reseau" rows="4" required></textarea>
+
+			<label for="firewall">Qu'est-ce qu'un firewall ?</label>
+			<textarea id="firewall" name="firewall" rows="4" required></textarea>
+
+			<label for="cryptography">Qu'est-ce que la cryptographie ?</label>
+			<textarea id="cryptography" name="cryptography" rows="4" required></textarea>
+
+			<label for="ssl">Qu'est-ce que le protocole SSL ?</label>
+			<textarea id="ssl" name="ssl" rows="4" required></textarea>
+
+			<label for="vuln">Qu'est-ce qu'une vulnérabilité informatique ?</label>
+			<textarea id="vuln" name="vuln" rows="4" required></textarea>
+
+			<label for="phishing">Qu'est-ce que le phishing ?</label>
+			<textarea id="phishing" name="phishing" rows="4" required></textarea>
+
+			<label for="authent">Qu'est-ce que l'authentification forte ?</label>
+			<textarea id="authent"
